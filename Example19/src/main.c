@@ -114,8 +114,8 @@ GLUSboolean init(GLUSvoid)
 
     //
 
-    glusFileLoadText("../Example19/shader/basic_proj.vert.glsl", &vertexSource);
-    glusFileLoadText("../Example19/shader/texture_multi_proj.frag.glsl", &fragmentSource);
+    glusFileLoadText("../../Example19/shader/basic_proj.vert.glsl", &vertexSource);
+    glusFileLoadText("../../Example19/shader/texture_multi_proj.frag.glsl", &fragmentSource);
 
     glusProgramBuildFromSource(&g_program, (const GLUSchar**) &vertexSource.text, 0, 0, 0, (const GLUSchar**) &fragmentSource.text);
 

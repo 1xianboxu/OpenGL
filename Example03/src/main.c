@@ -76,8 +76,8 @@ GLUSboolean init(GLUSvoid)
 
     GLUSshape plane;
 
-    glusFileLoadText("../Example03/shader/texture.vert.glsl", &vertexSource);
-    glusFileLoadText("../Example03/shader/grey.frag.glsl", &fragmentSource);
+    glusFileLoadText("../../Example03/shader/texture.vert.glsl", &vertexSource);
+    glusFileLoadText("../../Example03/shader/grey.frag.glsl", &fragmentSource);
 
     glusProgramBuildFromSource(&g_program, (const GLchar**) &vertexSource.text, 0, 0, 0, (const GLchar**) &fragmentSource.text);
 

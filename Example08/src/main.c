@@ -70,8 +70,8 @@ GLUSboolean init(GLUSvoid)
     GLUStextfile vertexSource;
     GLUStextfile fragmentSource;
 
-    glusFileLoadText("../Example08/shader/cubemap.vert.glsl", &vertexSource);
-    glusFileLoadText("../Example08/shader/cubemap.frag.glsl", &fragmentSource);
+    glusFileLoadText("../../Example08/shader/cubemap.vert.glsl", &vertexSource);
+    glusFileLoadText("../../Example08/shader/cubemap.frag.glsl", &fragmentSource);
 
     glusProgramBuildFromSource(&g_program, (const GLUSchar**) &vertexSource.text, 0, 0, 0, (const GLUSchar**) &fragmentSource.text);
 

@@ -75,3 +75,18 @@ foreach (EXAMPLE ${EXAMPLES_LIST})
 	message(STATUS "Add Subdirectory: " ${EXAMPLE})
 	add_subdirectory(${EXAMPLE})
 endforeach()
+
+
+file(GLOB USER_LIBS_PATH  "Binaries/*")
+# file(COPY ${srcPath} DESTINATION ${desPath})
+
+foreach(srcFilePath  ${USER_LIBS_PATH})
+	# message(=========================${itme})
+
+	set(desPath ${EXECUTABLE_OUTPUT_PATH}/Debug)
+	message(Copy=========================${srcFilePath}================To${desPath})
+	file(COPY ${srcFilePath} DESTINATION ${desPath})
+	set(desPath ${EXECUTABLE_OUTPUT_PATH}/Release)
+	message(Copy=========================${srcFilePath}================To${desPath})
+	file(COPY ${srcFilePath} DESTINATION ${desPath})
+endforeach()

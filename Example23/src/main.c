@@ -92,11 +92,11 @@ GLUSboolean init(GLUSvoid)
 
 	GLUStgaimage image;
 
-	glusFileLoadText("../Example23/shader/tessellation.vert.glsl", &vertexSource);
-	glusFileLoadText("../Example23/shader/tessellation.cont.glsl", &controlSource);
-	glusFileLoadText("../Example23/shader/tessellation.eval.glsl", &evaluationSource);
-	glusFileLoadText("../Example23/shader/tessellation.geom.glsl", &geometrySource);
-	glusFileLoadText("../Example23/shader/tessellation.frag.glsl", &fragmentSource);
+	glusFileLoadText("../../Example23/shader/tessellation.vert.glsl", &vertexSource);
+	glusFileLoadText("../../Example23/shader/tessellation.cont.glsl", &controlSource);
+	glusFileLoadText("../../Example23/shader/tessellation.eval.glsl", &evaluationSource);
+	glusFileLoadText("../../Example23/shader/tessellation.geom.glsl", &geometrySource);
+	glusFileLoadText("../../Example23/shader/tessellation.frag.glsl", &fragmentSource);
 
 	glusProgramBuildFromSource(&g_program, (const GLUSchar**) &vertexSource.text, (const GLUSchar**) &controlSource.text, (const GLUSchar**) &evaluationSource.text, (const GLUSchar**) &geometrySource.text, (const GLUSchar**) &fragmentSource.text);
 

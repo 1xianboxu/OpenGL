@@ -87,8 +87,8 @@ GLUSboolean init(GLUSvoid)
     GLUStextfile vertexSource;
     GLUStextfile fragmentSource;
 
-    glusFileLoadText("../Example11/shader/glass.vert.glsl", &vertexSource);
-    glusFileLoadText("../Example11/shader/glass.frag.glsl", &fragmentSource);
+    glusFileLoadText("../../Example11/shader/glass.vert.glsl", &vertexSource);
+    glusFileLoadText("../../Example11/shader/glass.frag.glsl", &fragmentSource);
 
     glusProgramBuildFromSource(&g_program, (const GLUSchar**) &vertexSource.text, 0, 0, 0, (const GLUSchar**) &fragmentSource.text);
 
@@ -97,8 +97,8 @@ GLUSboolean init(GLUSvoid)
 
     //
 
-    glusFileLoadText("../Example11/shader/background.vert.glsl", &vertexSource);
-    glusFileLoadText("../Example11/shader/background.frag.glsl", &fragmentSource);
+    glusFileLoadText("../../Example11/shader/background.vert.glsl", &vertexSource);
+    glusFileLoadText("../../Example11/shader/background.frag.glsl", &fragmentSource);
 
     glusProgramBuildFromSource(&g_programBackground, (const GLUSchar**) &vertexSource.text, 0, 0, 0, (const GLUSchar**) &fragmentSource.text);
 
